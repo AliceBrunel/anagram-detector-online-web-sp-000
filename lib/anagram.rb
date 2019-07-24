@@ -8,15 +8,15 @@ class Anagram
   end
   
   def match(array)
-  match = ""
+  match = " "
     array.each do |word|
       if word.split("").sort == name.sort
-      puts word
+        match = word
       else
-      puts nil
+        nil
       end
     end
-    
+  match
   end
 
 end 
